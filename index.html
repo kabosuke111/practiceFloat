@@ -1,6 +1,5 @@
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/temp_alleditable.dwt" codeOutsideHTMLIsLocked="false" -->
-<!-- InstanceBeginEditable name="all" -->
+<html><!-- InstanceBegin template="../../dreamweaver用テンプレート/Templates/temp.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta htto-equiv="x-ua-compatible" content="IE=Edge">
 <meta name="author" content="工藤勇斗">
@@ -9,7 +8,6 @@
 <meta name="description" content="">
 
 <!--ツィッターとFB用のmeta-->
-<title>ワンカラムレイアウト</title>
 <meta property="og:site_name" content="">
 <meta property="og:title" content="">
 <meta property="og:type" content="">
@@ -20,10 +18,20 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@kh44678970">
 <meta charset="UTF-8">
+<!-- InstanceBeginEditable name="meta" -->
+<meta name="" content="">
+<title>フロートレイアウト</title>
+<link>
+    
+    
+<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/ress.css">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
 </head>
 <body>
 <div id="wrapper">
@@ -52,6 +60,7 @@
                                             サイトメイン
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- InstanceBeginEditable name="main" -->
 <main id="main">
 
 <!--.................................................................................................
@@ -66,7 +75,7 @@
         <section class="">
             <h3 class="section-title"></h3>
             <div>
-                
+            
             </div>
         </section>
         
@@ -74,7 +83,7 @@
         <section class="">
             <h3 class="section-title"></h3>
             <div>
-                
+            
             </div>
         </section>
         
@@ -87,13 +96,20 @@
         </section>
     </article>
 </main>
-
+    
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////
 
                                             アサイド
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
+<aside id="aside">
+    <div>
+        <ul id="aside__nav" class="sidemenu__box">
+        </ul>
+    </div>
+</aside>
+    
+<!-- InstanceEndEditable -->
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////
 
                                             サイトフッター
@@ -102,14 +118,20 @@
 <footer id="footer">
     <div>
         <address></address>
-        <small>&copy; 2019</small>
+        <small>&copy;sampleLayout 2019</small>
     </div>
 </footer>
 </div>
-<script src="script/script.js"></script>
+<!-- InstanceBeginEditable name="script" -->
 <script>
-    
-</script>
-</body>
+    //アサイドナヴィゲーションの繰り返し
+    var listList = ["Sidemenu1","Sidemenu2","Sidemenu3","Sidemenu4",];
+    var listPlus = document.getElementById("aside__nav");
+    for (var i = 0; i < listList.length; i++) {
+        var elem = document.createElement("li");
+        listPlus.appendChild(elem).textContent = listList[i];
+    }
+</script>    
 <!-- InstanceEndEditable -->
+</body>
 <!-- InstanceEnd --></html>

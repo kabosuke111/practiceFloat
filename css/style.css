@@ -10,7 +10,10 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.4rem; }
+  font-size: 1.4rem; 
+  font-family: 'M PLUS 1p', sans-serif;
+  
+}
 
 
 #wrapper {
@@ -21,9 +24,33 @@ body {
 
 #header {
   width: 100%;
+  height: 100px;
+  background: #929292;
 }
 
 #main {
-  width: 500px;
-  
+  width: 700px;
+  height: 500px;
+  background: rgb(245, 63, 63);
+}
+
+#aside {
+  width: 260px;
+  height: 500px;
+  background: #8ee78e;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background: #232323;
+  color: #fff;
+  padding: 43px;
+  text-align: center;
+}
+
+.sidemenu__box li {
+  list-style: none;
+  padding: 15px;
+
 }
