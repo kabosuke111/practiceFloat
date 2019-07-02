@@ -1,0 +1,47 @@
+/* Scss Document */
+@charset "utf-8";
+
+$main_color: #fff;
+$sub_color: #000;
+$main_font: sans-serif;
+$en_font: serif;
+$B_point: 768px;
+
+@mixin FLEX($dtype:flex, $jtype:center, $wtype:wrap) {
+    display: $dtype;
+    justify-content: $jtype;
+    flex-wrap: $wtype;
+}
+
+@mixin WHDM($Bwidth:auto, $Bheight:auto, $BMXWidth: none, $BMXHeight:none, $Bdisp:block, $Bmargin: 0 auto) {
+    width: $Bwidth;
+    height: $Bheight;
+    max-width: $BMXWidth;
+    max-height: $BMXHeight;
+    display: $Bdisp;
+    margin: $Bmargin;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+#wrapper {
+    
+}
+
+
+
