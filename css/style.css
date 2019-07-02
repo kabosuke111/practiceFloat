@@ -11,3 +11,19 @@ html {
 
 body {
   font-size: 1.4rem; }
+
+
+#wrapper {
+  width: 960px;
+  background-color: #dac496;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+}
+
+#main {
+  width: 500px;
+  
+}
