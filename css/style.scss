@@ -23,25 +23,148 @@ $B_point: 768px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
-*,*::before,*::after {
-    box-sizing: border-box;
-}
+*, *::before, *::after {
+  box-sizing: border-box; }
 
 html {
-    font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
-    font-size: 1.4rem;
+  font-size: 1.4rem; 
+  font-family: 'M PLUS 1p', sans-serif;
+  
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+//h3セクションタイトル
+.section-title {
+    font-size: 2.4rem;
+    padding: 8px;
+    letter-spacing: 2px;
 }
 
 #wrapper {
+  width: 960px;
+  background-color: #EAE3CD;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  height: 120px;
+  background: #929292;
+}
+
+#main {
+  width: 700px;
+  height: 500px;
+  background: rgb(245, 63, 63);
+    float: left;
+}
+
+#aside {
+  width: 260px;
+  height: 500px;
+  background: #8ee78e;
+    float: right;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background: #232323;
+  color: #fff;
+  padding: 43px;
+  text-align: center;
+    clear: both;
+}
+
+/*---------------------------------------------------------------------------
+
+                                    ヘッダー
+
+---------------------------------------------------------------------------*/
+.site__title {
+    font-size: 4.0rem;
+    padding: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.site__ul {
+    @include FLEX();
+    
+    li {
+        list-style: none;
+        margin: 0 15px;
+        
+        
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 7px 25px;
+            border-radius: 8px;
+            transition: 0.5s ease-out;
+            color: #fff;
+            letter-spacing: 2px;
+
+            &:hover {
+                color: #555;
+                background: #eee;
+            }
+        }
+
+
+    }
+}
+
+/*---------------------------------------------------------------------------
+
+                                    アサイド
+
+---------------------------------------------------------------------------*/
+.sidemenu__box li {
+  list-style: none;
+  padding: 15px;
+}
+
+
+/*---------------------------------------------------------------------------
+
+                            スリーカラムレイアウト
+
+---------------------------------------------------------------------------*/
+.column-three__inner {
     
 }
+
+.column-three__inner--footer {
+    background: #E9D454;
+    height: 100px;
+    width: 100%;
+}
+
+[class^="column-three__box"] {
+    height: 300px;
+    width: calc(100% / 3);
+    width: -webkit-calc(100% / 3);
+    float: left;
+}
+
+.column-three__box--box1 {background: #5583F5;}
+.column-three__box--box2 {background: #46E8DE;}
+.column-three__box--box3 {background: #57E48D;}
+
+
+
 
 
 
