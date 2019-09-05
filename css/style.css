@@ -118,3 +118,52 @@ body {
 
 .column-three__box--box3 {
   background: #57E48D; }
+
+.textgroup {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+/*---------------------------------------------------------------------------
+
+                            レスポンシブ
+
+---------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  [class^="column-three__box"] {
+    width: 100%;
+    float: none; }
+
+  .column-three__box--box1::after {
+    clear: both; }
+
+  .column-three__box--box2::after {
+    clear: both; }
+
+  .column-three__box--box3::after {
+    clear: both; }
+
+  #main {
+    float: none;
+    height: auto; }
+    #main::after {
+      content: "";
+      display: block;
+      clear: both; }
+
+  #header {
+    height: auto; }
+
+  #aside {
+    float: none;
+    max-width: none;
+    height: auto; }
+    #aside::after {
+      content: "";
+      display: block;
+      clear: both; }
+
+  #wrapper, #header, #main, #aside, #footer {
+    max-width: auto;
+    width: 100%; } }
